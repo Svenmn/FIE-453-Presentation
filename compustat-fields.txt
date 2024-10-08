@@ -1,0 +1,648 @@
+Variable Name 	Type 	Length 	Description
+acchgq 	double 	53 	Accounting Changes - Cumulative Effect
+acchgy 	double 	53 	Accounting Changes - Cumulative Effect
+acctchgq 	string 	8 	Adoption of Accounting Changes
+acctstdq 	string 	8 	Accounting Standard
+acomincq 	double 	53 	Accumulated Other Comprehensive Income (Loss)
+acoq 	double 	53 	Current Assets - Other - Total
+actq 	double 	53 	Current Assets - Total
+adjex 	double 	53 	Cumulative Adjustment Factor by Ex-Date
+adrrq 	double 	53 	ADR Ratio
+afudccy 	double 	53 	Allowance for Funds Used During Construction (Cash Flow)
+afudciy 	double 	53 	Allowance for Funds Used During Construction (Investing) (Cash Flow)
+ajexq 	double 	53 	Adjustment Factor (Company) - Cumulative by Ex-Date
+ajpq 	double 	53 	Adjustment Factor (Company) - Cumulative byPay-Date
+altoq 	double 	53 	Other Long-term Assets
+amcy 	double 	53 	Amortization (Cash Flow)
+ancq 	double 	53 	Non-Current Assets - Total
+anoq 	double 	53 	Assets Netting & Other Adjustments
+aociderglq 	double 	53 	Accum Other Comp Inc - Derivatives Unrealized Gain/Loss
+aociotherq 	double 	53 	Accum Other Comp Inc - Other Adjustments
+aocipenq 	double 	53 	Accum Other Comp Inc - Min Pension Liab Adj
+aocisecglq 	double 	53 	Accum Other Comp Inc - Unreal G/L Ret Int in Sec Assets
+aol2q 	double 	53 	Assets Level2 (Observable)
+aolochy 	double 	53 	Assets and Liabilities - Other (Net Change)
+aoq 	double 	53 	Assets - Other - Total
+apalchy 	double 	53 	Accounts Payable and Accrued Liabilities - Increase (Decrease)
+apdedateq 	date 		Actual Period End date
+apq 	double 	53 	Account Payable/Creditors - Trade
+aqaq 	double 	53 	Acquisition/Merger After-Tax
+aqay 	double 	53 	Acquisition/Merger After-Tax
+aqcy 	double 	53 	Acquisitions
+aqdq 	double 	53 	Acquisition/Merger Diluted EPS Effect
+aqdy 	double 	53 	Acquisition/Merger Diluted EPS Effect
+aqepsq 	double 	53 	Acquisition/Merger Basic EPS Effect
+aqepsy 	double 	53 	Acquisition/Merger Basic EPS Effect
+aqpl1q 	double 	53 	Assets Level1 (Quoted Prices)
+aqpq 	double 	53 	Acquisition/Merger Pretax
+aqpy 	double 	53 	Acquisition/Merger Pretax
+arcedq 	double 	53 	As Reported Core - Diluted EPS Effect
+arcedy 	double 	53 	As Reported Core - Diluted EPS Effect
+arceepsq 	double 	53 	As Reported Core - Basic EPS Effect
+arceepsy 	double 	53 	As Reported Core - Basic EPS Effect
+arceq 	double 	53 	As Reported Core - After-tax
+arcey 	double 	53 	As Reported Core - After-tax
+atq 	double 	53 	Assets - Total
+aul3q 	double 	53 	Assets Level3 (Unobservable)
+billexceq 	double 	53 	Billings in Excess of Cost & Earnings
+bsprq 	string 	8 	Balance Sheet Presentation
+capr1q 	double 	53 	Risk-Adjusted Capital Ratio - Tier 1
+capr2q 	double 	53 	Risk-Adjusted Capital Ratio - Tier 2
+capr3q 	double 	53 	Risk-Adjusted Capital Ratio - Combined
+capsftq 	double 	53 	Capitalized Software
+capsq 	double 	53 	Capital Surplus/Share Premium Reserve
+capxy 	double 	53 	Capital Expenditures
+cdvcy 	double 	53 	Cash Dividends on Common Stock (Cash Flow)
+ceiexbillq 	double 	53 	Cost & Earnings in Excess of Billings
+ceqq 	double 	53 	Common/Ordinary Equity - Total
+chechy 	double 	53 	Cash and Cash Equivalents - Increase (Decrease)
+cheq 	double 	53 	Cash and Short-Term Investments
+chq 	double 	53 	Cash
+cibegniq 	double 	53 	Comp Inc - Beginning Net Income
+cibegniy 	double 	53 	Comp Inc - Beginning Net Income
+cicurrq 	double 	53 	Comp Inc - Currency Trans Adj
+cicurry 	double 	53 	Comp Inc - Currency Trans Adj
+ciderglq 	double 	53 	Comp Inc - Derivative Gains/Losses
+cidergly 	double 	53 	Comp Inc - Derivative Gains/Losses
+cik 	string 	10 	CIK Number
+cimiiq 	double 	53 	Comprehensive Income - Noncontrolling Interest
+cimiiy 	double 	53 	Comprehensive Income - Noncontrolling Interest
+ciotherq 	double 	53 	Comp Inc - Other Adj
+ciothery 	double 	53 	Comp Inc - Other Adj
+cipenq 	double 	53 	Comp Inc - Minimum Pension Adj
+cipeny 	double 	53 	Comp Inc - Minimum Pension Adj
+ciq 	double 	53 	Comprehensive Income - Total
+cisecglq 	double 	53 	Comp Inc - Securities Gains/Losses
+cisecgly 	double 	53 	Comp Inc - Securities Gains/Losses
+citotalq 	double 	53 	Comprehensive Income - Parent
+citotaly 	double 	53 	Comprehensive Income - Parent
+ciy 	double 	53 	Comprehensive Income - Total
+cogsq 	double 	53 	Cost of Goods Sold
+cogsy 	double 	53 	Cost of Goods Sold
+compstq 	string 	8 	Comparability Status
+conm 	string 	57 	Company Name
+consol 	string 	2 	Level of Consolidation - Company Interim Descriptor
+costat 	string 	1 	Active/Inactive Status Marker
+csh12q 	double 	53 	Common Shares Used to Calculate Earnings Per Share - 12 Months Moving
+cshfd12 	double 	53 	Common Shares Used to Calc Earnings Per Share - Fully Diluted - 12 Months Moving
+cshfdq 	double 	53 	Com Shares for Diluted EPS
+cshfdy 	double 	53 	Com Shares for Diluted EPS
+cshiq 	double 	53 	Common Shares Issued
+cshopq 	double 	53 	Total Shares Repurchased - Quarter
+cshoq 	double 	53 	Common Shares Outstanding
+cshprq 	double 	53 	Common Shares Used to Calculate Earnings Per Share - Basic
+cshpry 	double 	53 	Common Shares Used to Calculate Earnings Per Share - Basic
+cshtrq 	double 	53 	Common Shares Traded - Quarter
+cstkcvq 	double 	53 	Carrying Value
+cstkeq 	double 	53 	Common Stock Equivalents - Dollar Savings
+cstkey 	double 	53 	Common Stock Equivalents - Dollar Savings
+cstkq 	double 	53 	Common/Ordinary Stock (Capital)
+curcdq 	string 	3 	ISO Currency Code
+curncdq 	string 	3 	Native Currency Code
+currtrq 	double 	53 	Currency Translation Rate
+curuscnq 	double 	53 	US Canadian Translation Rate - Interim
+cusip 	string 	9 	CUSIP
+datacqtr 	string 	6 	Calendar Data Year and Quarter
+datadate 	date 		Data Date
+datafmt 	string 	12 	Data Format
+datafqtr 	string 	6 	Fiscal Data Year and Quarter
+dcomq 	double 	53 	Deferred Compensation
+dd1q 	double 	53 	Long-Term Debt Due in One Year
+depcy 	double 	53 	Depreciation and Depletion (Cash Flow)
+deracq 	double 	53 	Derivative Assets - Current
+deraltq 	double 	53 	Derivative Assets Long-Term
+derhedglq 	double 	53 	Gains/Losses on Derivatives and Hedging
+derhedgly 	double 	53 	Gains/Losses on Derivatives and Hedging
+derlcq 	double 	53 	Derivative Liabilities- Current
+derlltq 	double 	53 	Derivative Liabilities Long-Term
+diladq 	double 	53 	Dilution Adjustment
+dilady 	double 	53 	Dilution Adjustment
+dilavq 	double 	53 	Dilution Available - Excluding Extraordinary Items
+dilavy 	double 	53 	Dilution Available - Excluding Extraordinary Items
+dlcchy 	double 	53 	Changes in Current Debt
+dlcq 	double 	53 	Debt in Current Liabilities
+dltisy 	double 	53 	Long-Term Debt - Issuance
+dltry 	double 	53 	Long-Term Debt - Reduction
+dlttq 	double 	53 	Long-Term Debt - Total
+doq 	double 	53 	Discontinued Operations
+doy 	double 	53 	Discontinued Operations
+dpacreq 	double 	53 	Accumulated Depreciation of RE Property
+dpactq 	double 	53 	Depreciation, Depletion and Amortization (Accumulated)
+dpcy 	double 	53 	Depreciation and Amortization - Statement of Cash Flows
+dpq 	double 	53 	Depreciation and Amortization - Total
+dpretq 	double 	53 	Depr/Amort of Property
+dprety 	double 	53 	Depr/Amort of Property
+dpy 	double 	53 	Depreciation and Amortization - Total
+drcq 	double 	53 	Deferred Revenue - Current
+drltq 	double 	53 	Deferred Revenue - Long-term
+dteaq 	double 	53 	Extinguishment of Debt After-tax
+dteay 	double 	53 	Extinguishment of Debt After-tax
+dtedq 	double 	53 	Extinguishment of Debt Diluted EPS Effect
+dtedy 	double 	53 	Extinguishment of Debt Diluted EPS Effect
+dteepsq 	double 	53 	Extinguishment of Debt Basic EPS Effect
+dteepsy 	double 	53 	Extinguishment of Debt Basic EPS Effect
+dtepq 	double 	53 	Extinguishment of Debt Pretax
+dtepy 	double 	53 	Extinguishment of Debt Pretax
+dvintfq 	double 	53 	Dividends & Interest Receivable (Cash Flow)
+dvpq 	double 	53 	Dividends - Preferred/Preference
+dvpspq 	double 	53 	Dividends per Share - Pay Date - Quarter
+dvpsxq 	double 	53 	Div per Share - Exdate - Quarter
+dvpy 	double 	53 	Dividends - Preferred/Preference
+dvy 	double 	53 	Cash Dividends
+epsf12 	double 	53 	Earnings Per Share (Diluted) - Excluding Extraordinary Items - 12 Months Moving
+epsfi12 	double 	53 	Earnings Per Share (Diluted) - Including Extraordinary Items
+epsfiq 	double 	53 	Earnings Per Share (Diluted) - Including Extraordinary Items
+epsfiy 	double 	53 	Earnings Per Share (Diluted) - Including Extraordinary Items
+epsfxq 	double 	53 	Earnings Per Share (Diluted) - Excluding Extraordinary items
+epsfxy 	double 	53 	Earnings Per Share (Diluted) - Excluding Extraordinary items
+epspi12 	double 	53 	Earnings Per Share (Basic) - Including Extraordinary Items - 12 Months Moving
+epspiq 	double 	53 	Earnings Per Share (Basic) - Including Extraordinary Items
+epspiy 	double 	53 	Earnings Per Share (Basic) - Including Extraordinary Items
+epspxq 	double 	53 	Earnings Per Share (Basic) - Excluding Extraordinary Items
+epspxy 	double 	53 	Earnings Per Share (Basic) - Excluding Extraordinary Items
+epsx12 	double 	53 	Earnings Per Share (Basic) - Excluding Extraordinary Items - 12 Months Moving
+esopctq 	double 	53 	Common ESOP Obligation - Total
+esopnrq 	double 	53 	Preferred ESOP Obligation - Non-Redeemable
+esoprq 	double 	53 	Preferred ESOP Obligation - Redeemable
+esoptq 	double 	53 	Preferred ESOP Obligation - Total
+esubcy 	double 	53 	Equity in Net Loss/Earnings (C/F)
+esubq 	double 	53 	Equity in Earnings (I/S) - Unconsolidated Subsidiaries
+esuby 	double 	53 	Equity in Earnings (I/S)- Unconsolidated Subsidiaries
+exchg 	double 	53 	Stock Exchange Code
+exrey 	double 	53 	Exchange Rate Effect
+fcaq 	double 	53 	Foreign Exchange Income (Loss)
+fcay 	double 	53 	Foreign Exchange Income (Loss)
+fdateq 	date 		Final Date
+ffoq 	double 	53 	Funds From Operations (REIT)
+ffoy 	double 	53 	Funds From Operations (REIT)
+fiaoy 	double 	53 	Financing Activities - Other
+fic 	string 	3 	Current ISO Country Code - Incorporation
+finacoq 	double 	53 	Finance Division Other Current Assets, Total
+finalq 	string 	2 	Final Indicator Flag
+finaoq 	double 	53 	Finance Division Other Long-Term Assets, Total
+fincfy 	double 	53 	Financing Activities - Net Cash Flow
+finchq 	double 	53 	Finance Division - Cash
+findlcq 	double 	53 	Finance Division Long-Term Debt Current
+findltq 	double 	53 	Finance Division Debt Long-Term
+finivstq 	double 	53 	Finance Division Short-Term Investments
+finlcoq 	double 	53 	Finance Division Other Current Liabilities, Total
+finltoq 	double 	53 	Finance Division Other Long Term Liabilities, Total
+finnpq 	double 	53 	Finance Division Notes Payable
+finreccq 	double 	53 	Finance Division Current Receivables
+finrecltq 	double 	53 	Finance Division Long-Term Receivables
+finrevq 	double 	53 	Finance Division Revenue
+finrevy 	double 	53 	Finance Division Revenue
+finxintq 	double 	53 	Finance Division Interest Expense
+finxinty 	double 	53 	Finance Division Interest Expense
+finxoprq 	double 	53 	Finance Division Operating Expense
+finxopry 	double 	53 	Finance Division Operating Expense
+fopoxy 	double 	53 	Funds from Operations - Other excluding Option Tax Benefit
+fopoy 	double 	53 	Funds from Operations - Other
+fopty 	double 	53 	Funds From Operations - Total
+fqtr 	double 	53 	Fiscal Quarter
+fsrcoy 	double 	53 	Sources of Funds - Other
+fsrcty 	double 	53 	Sources of Funds - Total
+fuseoy 	double 	53 	Uses of Funds - Other
+fusety 	double 	53 	Uses of Funds - Total
+fyearq 	double 	53 	Fiscal Year
+fyr 	double 	53 	Fiscal Year-end Month
+gdwlamq 	double 	53 	Amortization of Goodwill
+gdwlamy 	double 	53 	Amortization of Goodwill
+gdwlia12 	double 	53 	Impairments of Goodwill AfterTax - 12mm
+gdwliaq 	double 	53 	Impairment of Goodwill After-tax
+gdwliay 	double 	53 	Impairment of Goodwill After-tax
+gdwlid12 	double 	53 	Impairments Diluted EPS - 12mm
+gdwlidq 	double 	53 	Impairment of Goodwill Diluted EPS Effect
+gdwlidy 	double 	53 	Impairment of Goodwill Diluted EPS Effect
+gdwlieps12 	double 	53 	Impairment of Goodwill Basic EPS Effect 12MM
+gdwliepsq 	double 	53 	Impairment of Goodwill Basic EPS Effect
+gdwliepsy 	double 	53 	Impairment of Goodwill Basic EPS Effect
+gdwlipq 	double 	53 	Impairment of Goodwill Pretax
+gdwlipy 	double 	53 	Impairment of Goodwill Pretax
+gdwlq 	double 	53 	Goodwill (net)
+glaq 	double 	53 	Gain/Loss After-Tax
+glay 	double 	53 	Gain/Loss After-Tax
+glcea12 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) After-tax 12MM
+glceaq 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) After-tax
+glceay 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) After-tax
+glced12 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) Diluted EPS Effect 12MM
+glcedq 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) Diluted EPS
+glcedy 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) Diluted EPS
+glceeps12 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) Basic EPS Effect 12MM
+glceepsq 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) Basic EPS Effect
+glceepsy 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) Basic EPS Effect
+glcepq 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) Pretax
+glcepy 	double 	53 	Gain/Loss on Sale (Core Earnings Adjusted) Pretax
+gldq 	double 	53 	Gain/Loss Diluted EPS Effect
+gldy 	double 	53 	Gain/Loss Diluted EPS Effect
+glepsq 	double 	53 	Gain/Loss Basic EPS Effect
+glepsy 	double 	53 	Gain/Loss Basic EPS Effect
+glivq 	double 	53 	Gains/Losses on investments
+glivy 	double 	53 	Gains/Losses on investments
+glpq 	double 	53 	Gain/Loss Pretax
+glpy 	double 	53 	Gain/Loss Pretax
+gvkey 	string 	6 	Global Company Key
+hedgeglq 	double 	53 	Gain/Loss on Ineffective Hedges
+hedgegly 	double 	53 	Gain/Loss on Ineffective Hedges
+ibadj12 	double 	53 	Income Before Extra Items - Adj for Common Stock Equivalents - 12MM
+ibadjq 	double 	53 	Income Before Extraordinary Items - Adjusted for Common Stock Equivalents
+ibadjy 	double 	53 	Income Before Extraordinary Items - Adjusted for Common Stock Equivalents
+ibcomq 	double 	53 	Income Before Extraordinary Items - Available for Common
+ibcomy 	double 	53 	Income Before Extraordinary Items - Available for Common
+ibcy 	double 	53 	Income Before Extraordinary Items - Statement of Cash Flows
+ibmiiq 	double 	53 	Income before Extraordinary Items and Noncontrolling Interests
+ibmiiy 	double 	53 	Income before Extraordinary Items and Noncontrolling Interests
+ibq 	double 	53 	Income Before Extraordinary Items
+iby 	double 	53 	Income Before Extraordinary Items
+icaptq 	double 	53 	Invested Capital - Total - Quarterly
+iid 	string 	3 	Issue ID - Security
+indfmt 	string 	12 	Industry Format
+intaccq 	double 	53 	Interest Accrued
+intanoq 	double 	53 	Other Intangibles
+intanq 	double 	53 	Intangible Assets - Total
+intpny 	double 	53 	Interest Paid - Net
+invchy 	double 	53 	Inventory - Decrease (Increase)
+invfgq 	double 	53 	Inventory - Finished Goods
+invoq 	double 	53 	Inventory - Other
+invrmq 	double 	53 	Inventory - Raw Materials
+invtq 	double 	53 	Inventories - Total
+invwipq 	double 	53 	Inventory - Work in Process
+itccy 	double 	53 	Investment Tax Credit - Net (Cash Flow)
+ivacoy 	double 	53 	Investing Activities - Other
+ivaeqq 	double 	53 	Investment and Advances - Equity
+ivaoq 	double 	53 	Investment and Advances - Other
+ivchy 	double 	53 	Increase in Investments
+ivltq 	double 	53 	Total Long-term Investments
+ivncfy 	double 	53 	Investing Activities - Net Cash Flow
+ivstchy 	double 	53 	Short-Term Investments - Change
+ivstq 	double 	53 	Short-Term Investments- Total
+lcoq 	double 	53 	Current Liabilities - Other - Total
+lctq 	double 	53 	Current Liabilities - Total
+lltq 	double 	53 	Long-Term Liabilities (Total)
+lnoq 	double 	53 	Liabilities Netting & Other Adjustments
+lol2q 	double 	53 	Liabilities Level2 (Observable)
+loq 	double 	53 	Liabilities - Other
+loxdrq 	double 	53 	Liabilities - Other - Excluding Deferred Revenue
+lqpl1q 	double 	53 	Liabilities Level1 (Quoted Prices)
+lseq 	double 	53 	Liabilities and Stockholders Equity - Total
+ltmibq 	double 	53 	Liabilities - Total and Noncontrolling Interest
+ltq 	double 	53 	Liabilities - Total
+lul3q 	double 	53 	Liabilities Level3 (Unobservable)
+mibnq 	double 	53 	Noncontrolling Interests - Nonredeemable - Balance Sheet
+mibq 	double 	53 	Noncontrolling Interest - Redeemable - Balance Sheet
+mibtq 	double 	53 	Noncontrolling Interests - Total - Balance Sheet
+miiq 	double 	53 	Noncontrolling Interest - Income Account
+miiy 	double 	53 	Noncontrolling Interest - Income Account
+mkvaltq 	double 	53 	Market Value - Total
+msaq 	double 	53 	Accum Other Comp Inc - Marketable Security Adjustments
+ncoq 	double 	53 	Net Charge-Offs
+ncoy 	double 	53 	Net Charge-Offs
+niitq 	double 	53 	Net Interest Income (Tax Equivalent)
+niity 	double 	53 	Net Interest Income (Tax Equivalent)
+nimq 	double 	53 	Net Interest Margin
+nimy 	double 	53 	Net Interest Margin
+niq 	double 	53 	Net Income (Loss)
+niy 	double 	53 	Net Income (Loss)
+nopiq 	double 	53 	Non-Operating Income (Expense) - Total
+nopiy 	double 	53 	Non-Operating Income (Expense) - Total
+npatq 	double 	53 	Nonperforming Assets - Total
+npq 	double 	53 	Notes Payable
+nrtxtdq 	double 	53 	Nonrecurring Income Taxes Diluted EPS Effect
+nrtxtdy 	double 	53 	Nonrecurring Income Taxes Diluted EPS Effect
+nrtxtepsq 	double 	53 	Nonrecurring Income Taxes Basic EPS Effect
+nrtxtepsy 	double 	53 	Nonrecurring Income Taxes Basic EPS Effect
+nrtxtq 	double 	53 	Nonrecurring Income Taxes - After-tax
+nrtxty 	double 	53 	Nonrecurring Income Taxes - After-tax
+oancfy 	double 	53 	Operating Activities - Net Cash Flow
+obkq 	double 	53 	Order backlog
+oepf12 	double 	53 	Earnings Per Share - Diluted - from Operations - 12MM
+oeps12 	double 	53 	Earnings Per Share from Operations - 12 Months Moving
+oepsxq 	double 	53 	Earnings Per Share - Diluted - from Operations
+oepsxy 	double 	53 	Earnings Per Share - Diluted - from Operations
+ogmq 	string 	8 	OIL & GAS METHOD
+oiadpq 	double 	53 	Operating Income After Depreciation - Quarterly
+oiadpy 	double 	53 	Operating Income After Depreciation - Year-to-Date
+oibdpq 	double 	53 	Operating Income Before Depreciation - Quarterly
+oibdpy 	double 	53 	Operating Income Before Depreciation
+opepsq 	double 	53 	Earnings Per Share from Operations
+opepsy 	double 	53 	Earnings Per Share from Operations
+optdrq 	double 	53 	Dividend Rate - Assumption (%)
+optdry 	double 	53 	Dividend Rate - Assumption (%)
+optfvgrq 	double 	53 	Options - Fair Value of Options Granted
+optfvgry 	double 	53 	Options - Fair Value of Options Granted
+optlifeq 	double 	53 	Life of Options - Assumption (# yrs)
+optlifey 	double 	53 	Life of Options - Assumption (# yrs)
+optrfrq 	double 	53 	Risk Free Rate - Assumption (%)
+optrfry 	double 	53 	Risk Free Rate - Assumption (%)
+optvolq 	double 	53 	Volatility - Assumption (%)
+optvoly 	double 	53 	Volatility - Assumption (%)
+pdateq 	date 		Preliminary Date
+pdvcy 	double 	53 	Cash Dividends on Preferred/Preference Stock (Cash Flow)
+piq 	double 	53 	Pretax Income
+piy 	double 	53 	Pretax Income
+pllq 	double 	53 	Provision for Loan/Asset Losses
+plly 	double 	53 	Provision for Loan/Asset Losses
+pnc12 	double 	53 	Pension Core Adjustment - 12mm
+pncd12 	double 	53 	Core Pension Adjustment Diluted EPS Effect 12MM
+pncdq 	double 	53 	Core Pension Adjustment Diluted EPS Effect
+pncdy 	double 	53 	Core Pension Adjustment Diluted EPS Effect
+pnceps12 	double 	53 	Core Pension Adjustment Basic EPS Effect 12MM
+pncepsq 	double 	53 	Core Pension Adjustment Basic EPS Effect
+pncepsy 	double 	53 	Core Pension Adjustment Basic EPS Effect
+pnciapq 	double 	53 	Core Pension Interest Adjustment After-tax Preliminary
+pnciapy 	double 	53 	Core Pension Interest Adjustment After-tax Preliminary
+pnciaq 	double 	53 	Core Pension Interest Adjustment After-tax
+pnciay 	double 	53 	Core Pension Interest Adjustment After-tax
+pncidpq 	double 	53 	Core Pension Interest Adjustment Diluted EPS Effect Preliminary
+pncidpy 	double 	53 	Core Pension Interest Adjustment Diluted EPS Effect Preliminary
+pncidq 	double 	53 	Core Pension Interest Adjustment Diluted EPS Effect
+pncidy 	double 	53 	Core Pension Interest Adjustment Diluted EPS Effect
+pnciepspq 	double 	53 	Core Pension Interest Adjustment Basic EPS Effect Preliminary
+pnciepspy 	double 	53 	Core Pension Interest Adjustment Basic EPS Effect Preliminary
+pnciepsq 	double 	53 	Core Pension Interest Adjustment Basic EPS Effect
+pnciepsy 	double 	53 	Core Pension Interest Adjustment Basic EPS Effect
+pncippq 	double 	53 	Core Pension Interest Adjustment Pretax Preliminary
+pncippy 	double 	53 	Core Pension Interest Adjustment Pretax Preliminary
+pncipq 	double 	53 	Core Pension Interest Adjustment Pretax
+pncipy 	double 	53 	Core Pension Interest Adjustment Pretax
+pncpd12 	double 	53 	Core Pension Adjustment 12MM Diluted EPS Effect Preliminary
+pncpdq 	double 	53 	Core Pension Adjustment Diluted EPS Effect Preliminary
+pncpdy 	double 	53 	Core Pension Adjustment Diluted EPS Effect Preliminary
+pncpeps12 	double 	53 	Core Pension Adjustment 12MM Basic EPS Effect Preliminary
+pncpepsq 	double 	53 	Core Pension Adjustment Basic EPS Effect Preliminary
+pncpepsy 	double 	53 	Core Pension Adjustment Basic EPS Effect Preliminary
+pncpq 	double 	53 	Core Pension Adjustment Preliminary
+pncpy 	double 	53 	Core Pension Adjustment Preliminary
+pncq 	double 	53 	Core Pension Adjustment
+pncwiapq 	double 	53 	Core Pension w/o Interest Adjustment After-tax Preliminary
+pncwiapy 	double 	53 	Core Pension w/o Interest Adjustment After-tax Preliminary
+pncwiaq 	double 	53 	Core Pension w/o Interest Adjustment After-tax
+pncwiay 	double 	53 	Core Pension w/o Interest Adjustment After-tax
+pncwidpq 	double 	53 	Core Pension w/o Interest Adjustment Diluted EPS Effect Preliminary
+pncwidpy 	double 	53 	Core Pension w/o Interest Adjustment Diluted EPS Effect Preliminary
+pncwidq 	double 	53 	Core Pension w/o Interest Adjustment Diluted EPS Effect
+pncwidy 	double 	53 	Core Pension w/o Interest Adjustment Diluted EPS Effect
+pncwiepq 	double 	53 	Core Pension w/o Interest Adjustment Basic EPS Effect Preliminary
+pncwiepsq 	double 	53 	Core Pension w/o Interest Adjustment Basic EPS Effect
+pncwiepsy 	double 	53 	Core Pension w/o Interest Adjustment Basic EPS Effect
+pncwiepy 	double 	53 	Core Pension w/o Interest Adjustment Basic EPS Effect Preliminary
+pncwippq 	double 	53 	Core Pension w/o Interest Adjustment Pretax Preliminary
+pncwippy 	double 	53 	Core Pension w/o Interest Adjustment Pretax Preliminary
+pncwipq 	double 	53 	Core Pension w/o Interest Adjustment Pretax
+pncwipy 	double 	53 	Core Pension w/o Interest Adjustment Pretax
+pncy 	double 	53 	Core Pension Adjustment
+pnrshoq 	double 	53 	Nonred Pfd Shares Outs (000) - Quarterly
+popsrc 	string 	1 	Population Source
+ppegtq 	double 	53 	Property, Plant and Equipment - Total (Gross) - Quarterly
+ppentq 	double 	53 	Property Plant and Equipment - Total (Net)
+prcaq 	double 	53 	Core Post Retirement Adjustment
+prcay 	double 	53 	Core Post Retirement Adjustment
+prccq 	double 	53 	Price Close - Quarter
+prcd12 	double 	53 	Core Post Retirement Adjustment Diluted EPS Effect 12MM
+prcdq 	double 	53 	Core Post Retirement Adjustment Diluted EPS Effect
+prcdy 	double 	53 	Core Post Retirement Adjustment Diluted EPS Effect
+prce12 	double 	53 	Core Post Retirement Adjustment 12MM
+prceps12 	double 	53 	Core Post Retirement Adjustment Basic EPS Effect 12MM
+prcepsq 	double 	53 	Core Post Retirement Adjustment Basic EPS Effect
+prcepsy 	double 	53 	Core Post Retirement Adjustment Basic EPS Effect
+prchq 	double 	53 	Price High - Quarter
+prclq 	double 	53 	Price Low - Quarter
+prcpd12 	double 	53 	Core Post Retirement Adjustment 12MM Diluted EPS Effect Preliminary
+prcpdq 	double 	53 	Core Post Retirement Adjustment Diluted EPS Effect Preliminary
+prcpdy 	double 	53 	Core Post Retirement Adjustment Diluted EPS Effect Preliminary
+prcpeps12 	double 	53 	Core Post Retirement Adjustment 12MM Basic EPS Effect Preliminary
+prcpepsq 	double 	53 	Core Post Retirement Adjustment Basic EPS Effect Preliminary
+prcpepsy 	double 	53 	Core Post Retirement Adjustment Basic EPS Effect Preliminary
+prcpq 	double 	53 	Core Post Retirement Adjustment Preliminary
+prcpy 	double 	53 	Core Post Retirement Adjustment Preliminary
+prcraq 	double 	53 	Repurchase Price - Average per share Quarter
+prshoq 	double 	53 	Redeem Pfd Shares Outs (000)
+prstkccy 	double 	53 	Purchase of Common Stock (Cash Flow)
+prstkcy 	double 	53 	Purchase of Common and Preferred Stock
+prstkpcy 	double 	53 	Purchase of Preferred/Preference Stock (Cash Flow)
+pstknq 	double 	53 	Preferred/Preference Stock - Nonredeemable
+pstkq 	double 	53 	Preferred/Preference Stock (Capital) - Total
+pstkrq 	double 	53 	Preferred/Preference Stock - Redeemable
+rcaq 	double 	53 	Restructuring Cost After-tax
+rcay 	double 	53 	Restructuring Cost After-tax
+rcdq 	double 	53 	Restructuring Cost Diluted EPS Effect
+rcdy 	double 	53 	Restructuring Cost Diluted EPS Effect
+rcepsq 	double 	53 	Restructuring Cost Basic EPS Effect
+rcepsy 	double 	53 	Restructuring Cost Basic EPS Effect
+rcpq 	double 	53 	Restructuring Cost Pretax
+rcpy 	double 	53 	Restructuring Cost Pretax
+rdipaq 	double 	53 	In Process R&D Expense After-tax
+rdipay 	double 	53 	In Process R&D Expense After-tax
+rdipdq 	double 	53 	In Process R&D Expense Diluted EPS Effect
+rdipdy 	double 	53 	In Process R&D Expense Diluted EPS Effect
+rdipepsq 	double 	53 	In Process R&D Expense Basic EPS Effect
+rdipepsy 	double 	53 	In Process R&D Expense Basic EPS Effect
+rdipq 	double 	53 	In Process R&D
+rdipy 	double 	53 	In Process R&D
+rdq 	date 		Report Date of Quarterly Earnings
+recchy 	double 	53 	Accounts Receivable - Decrease (Increase)
+recdq 	double 	53 	Receivables - Estimated Doubtful
+rectaq 	double 	53 	Accum Other Comp Inc - Cumulative Translation Adjustments
+rectoq 	double 	53 	Receivables - Current Other incl Tax Refunds
+rectq 	double 	53 	Receivables - Total
+rectrq 	double 	53 	Receivables - Trade
+recubq 	double 	53 	Unbilled Receivables - Quarterly
+req 	double 	53 	Retained Earnings
+retq 	double 	53 	Total RE Property
+reunaq 	double 	53 	Unadjusted Retained Earnings
+revtq 	double 	53 	Revenue - Total
+revty 	double 	53 	Revenue - Total
+rllq 	double 	53 	Reserve for Loan/Asset Losses
+rp 	string 	2 	Reporting Periodicity
+rra12 	double 	53 	Reversal - Restructruring/Acquisition Aftertax 12MM
+rraq 	double 	53 	Reversal - Restructruring/Acquisition Aftertax
+rray 	double 	53 	Reversal - Restructruring/Acquisition Aftertax
+rrd12 	double 	53 	Reversal - Restructuring/Acq Diluted EPS Effect 12MM
+rrdq 	double 	53 	Reversal - Restructuring/Acq Diluted EPS Effect
+rrdy 	double 	53 	Reversal - Restructuring/Acq Diluted EPS Effect
+rreps12 	double 	53 	Reversal - Restructuring/Acq Basic EPS Effect 12MM
+rrepsq 	double 	53 	Reversal - Restructuring/Acq Basic EPS Effect
+rrepsy 	double 	53 	Reversal - Restructuring/Acq Basic EPS Effect
+rrpq 	double 	53 	Reversal - Restructruring/Acquisition Pretax
+rrpy 	double 	53 	Reversal - Restructruring/Acquisition Pretax
+rstcheltq 	double 	53 	Long-Term Restricted Cash & Investments
+rstcheq 	double 	53 	Restricted Cash & Investments - Current
+saleq 	double 	53 	Sales/Turnover (Net)
+saley 	double 	53 	Sales/Turnover (Net)
+scfq 	double 	53 	Cash Flow Model
+scstkcy 	double 	53 	Sale of Common Stock (Cash Flow)
+seqoq 	double 	53 	Other Stockholders- Equity Adjustments
+seqq 	double 	53 	Stockholders Equity > Parent > Index Fundamental > Quarterly
+seta12 	double 	53 	Settlement (Litigation/Insurance) AfterTax - 12mm
+setaq 	double 	53 	Settlement (Litigation/Insurance) After-tax
+setay 	double 	53 	Settlement (Litigation/Insurance) After-tax
+setd12 	double 	53 	Settlement (Litigation/Insurance) Diluted EPS Effect 12MM
+setdq 	double 	53 	Settlement (Litigation/Insurance) Diluted EPS Effect
+setdy 	double 	53 	Settlement (Litigation/Insurance) Diluted EPS Effect
+seteps12 	double 	53 	Settlement (Litigation/Insurance) Basic EPS Effect 12MM
+setepsq 	double 	53 	Settlement (Litigation/Insurance) Basic EPS Effect
+setepsy 	double 	53 	Settlement (Litigation/Insurance) Basic EPS Effect
+setpq 	double 	53 	Settlement (Litigation/Insurance) Pretax
+setpy 	double 	53 	Settlement (Litigation/Insurance) Pretax
+sivy 	double 	53 	Sale of Investments
+spce12 	double 	53 	S&P Core Earnings 12MM
+spced12 	double 	53 	S&P Core Earnings EPS Diluted 12MM
+spcedpq 	double 	53 	S&P Core Earnings EPS Diluted - Preliminary
+spcedpy 	double 	53 	S&P Core Earnings EPS Diluted - Preliminary
+spcedq 	double 	53 	S&P Core Earnings EPS Diluted
+spcedy 	double 	53 	S&P Core Earnings EPS Diluted
+spceeps12 	double 	53 	S&P Core Earnings EPS Basic 12MM
+spceepsp12 	double 	53 	S&P Core 12MM EPS - Basic - Preliminary
+spceepspq 	double 	53 	S&P Core Earnings EPS Basic - Preliminary
+spceepspy 	double 	53 	S&P Core Earnings EPS Basic - Preliminary
+spceepsq 	double 	53 	S&P Core Earnings EPS Basic
+spceepsy 	double 	53 	S&P Core Earnings EPS Basic
+spcep12 	double 	53 	S&P Core Earnings 12MM - Preliminary
+spcepd12 	double 	53 	S&P Core Earnings 12MM EPS Diluted - Preliminary
+spcepq 	double 	53 	S&P Core Earnings - Preliminary
+spcepy 	double 	53 	S&P Core Earnings - Preliminary
+spceq 	double 	53 	S&P Core Earnings
+spcey 	double 	53 	S&P Core Earnings
+spidq 	double 	53 	Other Special Items Diluted EPS Effect
+spidy 	double 	53 	Other Special Items Diluted EPS Effect
+spiepsq 	double 	53 	Other Special Items Basic EPS Effect
+spiepsy 	double 	53 	Other Special Items Basic EPS Effect
+spioaq 	double 	53 	Other Special Items After-tax
+spioay 	double 	53 	Other Special Items After-tax
+spiopq 	double 	53 	Other Special Items Pretax
+spiopy 	double 	53 	Other Special Items Pretax
+spiq 	double 	53 	Special Items
+spiy 	double 	53 	Special Items
+sppey 	double 	53 	Sale of Property
+sppivy 	double 	53 	Sale of PP&E and Investments - (Gain) Loss
+spstkcy 	double 	53 	Sale of Preferred/Preference Stock (Cash Flow)
+srcq 	double 	53 	Source Code
+sretq 	double 	53 	Gain/Loss on Sale of Property
+srety 	double 	53 	Gain/Loss on Sale of Property
+sstky 	double 	53 	Sale of Common and Preferred Stock
+staltq 	string 	2 	Status Alert
+stkcoq 	double 	53 	Stock Compensation Expense
+stkcoy 	double 	53 	Stock Compensation Expense
+stkcpaq 	double 	53 	After-tax stock compensation
+stkcpay 	double 	53 	After-tax stock compensation
+tdcy 	double 	53 	Deferred Income Taxes - Net (Cash Flow)
+teqq 	double 	53 	Stockholders Equity - Total
+tfvaq 	double 	53 	Total Fair Value Assets
+tfvceq 	double 	53 	Total Fair Value Changes including Earnings
+tfvcey 	double 	53 	Total Fair Value Changes including Earnings
+tfvlq 	double 	53 	Total Fair Value Liabilities
+tic 	string 	8 	Ticker Symbol
+tieq 	double 	53 	Interest Expense - Total (Financial Services)
+tiey 	double 	53 	Interest Expense - Total (Financial Services)
+tiiq 	double 	53 	Interest Income - Total (Financial Services)
+tiiy 	double 	53 	Interest Income - Total (Financial Services)
+tsafcy 	double 	53 	Total Srcs of Funds (FOF)
+tstknq 	double 	53 	Treasury Stock - Number of Common Shares
+tstkq 	double 	53 	Treasury Stock - Total (All Capital)
+txachy 	double 	53 	Income Taxes - Accrued - Increase (Decrease)
+txbcofy 	double 	53 	Excess Tax Benefit of Stock Options - Cash Flow Financing
+txbcoy 	double 	53 	Excess Tax Benefit of Stock Options - Cash Flow Operating
+txdbaq 	double 	53 	Deferred Tax Asset - Long Term
+txdbcaq 	double 	53 	Current Deferred Tax Asset
+txdbclq 	double 	53 	Current Deferred Tax Liability
+txdbq 	double 	53 	Deferred Taxes - Balance Sheet
+txdcy 	double 	53 	Deferred Taxes (Statement of Cash Flows)
+txdiq 	double 	53 	Income Taxes - Deferred
+txditcq 	double 	53 	Deferred Taxes and Investment Tax Credit
+txdiy 	double 	53 	Income Taxes - Deferred
+txpdy 	double 	53 	Income Taxes Paid
+txpq 	double 	53 	Income Taxes Payable
+txtq 	double 	53 	Income Taxes - Total
+txty 	double 	53 	Income Taxes - Total
+txwq 	double 	53 	Excise Taxes
+txwy 	double 	53 	Excise Taxes
+uacoq 	double 	53 	Current Assets - Other - Utility
+uaolochy 	double 	53 	Other Assets and Liabilities - Net Change (Statement of Cash Flows)
+uaoq 	double 	53 	Other Assets - Utility
+uaptq 	double 	53 	Accounts Payable - Utility
+ucapsq 	double 	53 	Paid In Capital - Other - Utility
+ucconsq 	double 	53 	Contributions In Aid Of Construction
+uceqq 	double 	53 	Common Equity - Total - Utility
+uddq 	double 	53 	Debt (Debentures) - Utility
+udfccy 	double 	53 	Deferred Fuel - Increase (Decrease) (Statement of Cash Flows)
+udmbq 	double 	53 	Debt (Mortgage Bonds)
+udoltq 	double 	53 	Debt (Other Long-Term)
+udpcoq 	double 	53 	Debt (Pollution Control Obligations)
+udvpq 	double 	53 	Preferred Dividend Requirements
+udvpy 	double 	53 	Preferred Dividend Requirements - Utility
+ufretsdy 	double 	53 	Tot Funds Ret ofSec&STD (FOF)
+ugiq 	double 	53 	Gross Income (Income Before Interest Charges)
+ugiy 	double 	53 	Gross Income (Income Before Interest Charges) - Utility
+uinvq 	double 	53 	Inventories
+ulcoq 	double 	53 	Current Liabilities - Other
+uniamiq 	double 	53 	Net Income before Extraordinary Items After Noncontrolling Interest
+uniamiy 	double 	53 	Net Income before Extraordinary Items After Noncontrolling Interest - Utility
+unopincq 	double 	53 	Nonoperating Income (Net) - Other
+unopincy 	double 	53 	Nonoperating Income (Net) - Other - Utility
+unwccy 	double 	53 	Inc(Dec)Working Cap (FOF)
+uoisy 	double 	53 	Other Internal Sources - Net (Cash Flow)
+uopiq 	double 	53 	Operating Income - Total - Utility
+updq 	double 	53 	Update Code
+updvpq 	double 	53 	Preference Dividend Requirements - Utility
+updvpy 	double 	53 	Preference Dividend Requirements - Utility
+upmcstkq 	double 	53 	Premium On Common Stock - Utility
+upmpfq 	double 	53 	Premium On Preferred Stock - Utility
+upmpfsq 	double 	53 	Premium On Preference Stock - Utility
+upmsubpq 	double 	53 	Premium On Subsidiary Preferred Stock - Utility
+upstkcq 	double 	53 	Preference Stock At Carrying Value - Utility
+upstkq 	double 	53 	Preferred Stock At Carrying Value - Utility
+uptacy 	double 	53 	Utility Plant - Gross Additions (Cash Flow)
+urectq 	double 	53 	Receivables (Net) - Utility
+uspiq 	double 	53 	Special Items - Utility
+uspiy 	double 	53 	Special Items - Utility
+ustdncy 	double 	53 	Net Decr in ST Debt (FOF)
+usubdvpq 	double 	53 	Subsidiary Preferred Dividends - Utility
+usubdvpy 	double 	53 	Subsidiary Preferred Dividends - Utility
+usubpcvq 	double 	53 	Subsidiary Preferred Stock At Carrying Value - Utility
+utemq 	double 	53 	Maintenance Expense - Total
+utfdocy 	double 	53 	Total Funds From Ops (FOF)
+utfoscy 	double 	53 	Tot Funds Frm Outside Sources (FOF)
+utmey 	double 	53 	Maintenance Expense - Total
+uwkcapcy 	double 	53 	Dec(Inc) in Working Capital (FOF)
+wcapchy 	double 	53 	Working Capital Changes - Total
+wcapcy 	double 	53 	Working Capital Change - Other - Increase/(Decrease)
+wcapq 	double 	53 	Working Capital (Balance Sheet)
+wdaq 	double 	53 	Writedowns After-tax
+wday 	double 	53 	Writedowns After-tax
+wddq 	double 	53 	Writedowns Diluted EPS Effect
+wddy 	double 	53 	Writedowns Diluted EPS Effect
+wdepsq 	double 	53 	Writedowns Basic EPS Effect
+wdepsy 	double 	53 	Writedowns Basic EPS Effect
+wdpq 	double 	53 	Writedowns Pretax
+wdpy 	double 	53 	Writedowns Pretax
+xaccq 	double 	53 	Accrued Expenses
+xidocy 	double 	53 	Extraordinary Items and Discontinued Operations (Statement of Cash Flows)
+xidoq 	double 	53 	Extraordinary Items and Discontinued Operations
+xidoy 	double 	53 	Extraordinary Items and Discontinued Operations
+xintq 	double 	53 	Interest and Related Expense- Total
+xinty 	double 	53 	Interest and Related Expense- Total
+xiq 	double 	53 	Extraordinary Items
+xiy 	double 	53 	Extraordinary Items
+xoprq 	double 	53 	Operating Expense- Total
+xopry 	double 	53 	Operating Expense- Total
+xopt12 	double 	53 	Implied Option Expense - 12mm
+xoptd12 	double 	53 	Implied Option EPS Diluted 12MM
+xoptd12p 	double 	53 	Implied Option 12MM EPS Diluted Preliminary
+xoptdq 	double 	53 	Implied Option EPS Diluted
+xoptdqp 	double 	53 	Implied Option EPS Diluted Preliminary
+xoptdqpy 	double 	53 	Implied Option EPS Diluted Preliminary
+xoptdy 	double 	53 	Implied Option EPS Diluted
+xopteps12 	double 	53 	Implied Option EPS Basic 12MM
+xoptepsp12 	double 	53 	Implied Option 12MM EPS Basic Preliminary
+xoptepsq 	double 	53 	Implied Option EPS Basic
+xoptepsqp 	double 	53 	Implied Option EPS Basic Preliminary
+xoptepsqpy 	double 	53 	Implied Option EPS Basic Preliminary
+xoptepsy 	double 	53 	Implied Option EPS Basic
+xoptq 	double 	53 	Implied Option Expense
+xoptqp 	double 	53 	Implied Option Expense Preliminary
+xoptqpy 	double 	53 	Implied Option Expense Preliminary
+xopty 	double 	53 	Implied Option Expense
+xrdq 	double 	53 	Research and Development Expense
+xrdy 	double 	53 	Research and Development Expense
+xsgaq 	double 	53 	Selling, General and Administrative Expenses
+xsgay 	double 	53 	Selling, General and Administrative Expenses 
