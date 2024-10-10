@@ -105,13 +105,12 @@ calculate_mse <- function(predictions, actual_values) {
 
 dumb_pred <- sum(filtered_data$epspxq_sign[train.indices]) / nrow(train_x)
 
-  #rep(sum(filtered_data$epspxq_sign[train.indices]) / nrow(train_x), nrow(train_x))
+#rep(sum(filtered_data$epspxq_sign[train.indices]) / nrow(train_x), nrow(train_x))
 
-dumb_preds <- rep(pred, nrow(val_x))
+dumb_preds <- rep(dumb_pred, nrow(val_x))
 valid_values <- filtered_data$epspxq_sign[valid.indices]
 
 calculate_mse(dumb_preds, valid_values)
-
 
 #-------------GBM Model----------------------------------------
 gbm_model <- gbm(
@@ -134,7 +133,7 @@ gbm_preds_val <- predict(gbm_model, val_x, n.trees = best_iter, type = "response
 gbm_conf_mat_val <- evaluate_performance(gbm_preds_val, val_y)
 
 print("GBM Model Validation Results:")
-print(gbm_conf_mat)
+print(gbm_conf_mat_val)
 
 
 roc_obj_val <- roc(val_y, gbm_preds_val)
@@ -163,7 +162,6 @@ auc_test <- auc(roc_obj_test)
 
 #--------------Comparing Validation vs Test Set Metrics-------------------
 
-# Display the comparison of Accuracy, AUC, and other relevant metrics
 cat("\nPerformance Comparison:\n") %>% 
 cat("Accuracy (Validation): ", gbm_conf_mat_val$overall['Accuracy'], "\n") %>% 
 cat("Accuracy (Test): ", gbm_conf_mat_test$overall['Accuracy'], "\n") %>% 
@@ -172,8 +170,69 @@ cat("AUC (Validation): ", auc_val, "\n") %>%
 cat("AUC (Test): ", auc_test, "\n")
 
 
-# Plot the ROC curve for the validation and test sets
+# Plot ROC curve for the validation and test sets
 plot(roc_obj_val, col = "blue", main = "ROC Curve Comparison", lwd = 2)
 plot(roc_obj_test, col = "red", add = TRUE, lwd = 2)  
 legend("bottomright", legend = c("Validation", "Test"), col = c("blue", "red"), lwd = 2)
+
+#---------------CatBoost------------
+
+train_pool <- catboost.load_pool(data = as.matrix(train_x), label = train_y)
+val_pool <- catboost.load_pool(data = as.matrix(val_x), label = val_y)
+testing_pool <- catboost.load_pool(data = as.matrix(test_x), label = test_y)
+
+# Train CatBoost model with early stopping
+cat_model <- catboost.train(
+  train_pool,
+  params = list(
+    fold_permutation_block = 5,
+    use_best_model = TRUE,
+    loss_function = "Logloss",
+    iterations = 2000,
+    depth = 3,
+    learning_rate = 0.05,
+    eval_metric = "Logloss",
+    train_dir = "catboost_info"
+  ),
+  test_pool = val_pool  
+)
+
+# Best iteration
+best_nrounds <- cat_model$best_iteration
+
+
+cat_model
+
+
+
+#----------------Performance Metrics---------
+
+# Predict probabilities on the validation set
+cat_preds_val <- catboost.predict(cat_model, val_pool, prediction_type = "Probability") 
+cat_preds_val_class <- ifelse(cat_preds_val > 0.5, 1, 0)  
+val_labels <- val_y  
+conf_matrix <- confusionMatrix(factor(cat_preds_val_class), factor(val_labels), positive = "1")
+
+# Display the confusion matrix
+print("Confusion Matrix for Validation Set:")
+print(conf_matrix)
+
+# Display the accuracy of the model
+accuracy <- conf_matrix$overall['Accuracy']
+cat("Accuracy of CatBoost Model on Validation Set: ", accuracy, "\n")
+
+
+# Predict probabilities on the test set
+cat_preds_test <- catboost.predict(cat_model, testing_pool, prediction_type = "Probability")
+cat_preds_test_class <- ifelse(cat_preds_test > 0.5, 1, 0)
+test_labels <- test_y
+conf_matrix_test <- confusionMatrix(factor(cat_preds_test_class), factor(test_labels), positive = "1")
+
+# Display the confusion matrix for the test set
+print("Confusion Matrix for Test Set:")
+print(conf_matrix_test)
+
+# Display the accuracy of the model on the test set
+accuracy_test <- conf_matrix_test$overall['Accuracy']
+cat("Accuracy of CatBoost Model on Test Set: ", accuracy_test, "\n")
 
