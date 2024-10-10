@@ -137,7 +137,7 @@ print(gbm_conf_mat_val)
 
 
 roc_obj_val <- roc(val_y, gbm_preds_val)
-auc_val <- auc(roc_obj_test)
+auc_val <- auc(roc_obj_val)
 
 #-------------GBM: Predicting on Test Set-------------------
 
@@ -235,4 +235,34 @@ print(conf_matrix_test)
 # Display the accuracy of the model on the test set
 accuracy_test <- conf_matrix_test$overall['Accuracy']
 cat("Accuracy of CatBoost Model on Test Set: ", accuracy_test, "\n")
+
+
+
+#---------------Saving the Conf Matricies ---------------
+conf_matrix
+conf_matrix_test
+gbm_conf_mat_val
+gbm_conf_mat_test
+
+
+file_path <- "confusion_matrices.txt"
+
+append_confusion_matrix_to_file <- function(conf_matrix, file_path, title) {
+
+  conf_matrix_text <- capture.output(print(conf_matrix))
+  conf_matrix_text <- c(paste("\n###", title, "###\n"), conf_matrix_text)
+  file_conn <- file(file_path, open = "a")
+  writeLines(conf_matrix_text, file_conn)
+  close(file_conn)
+}
+
+# If the file exists and you want to start fresh, uncomment the following line
+# file.remove(file_path)
+
+append_confusion_matrix_to_file(conf_matrix, file_path, "Confusion Matrix 1: General")
+append_confusion_matrix_to_file(conf_matrix_test, file_path, "Confusion Matrix 2: Test Set")
+append_confusion_matrix_to_file(gbm_conf_mat_val, file_path, "Confusion Matrix 3: GBM Validation Set")
+append_confusion_matrix_to_file(gbm_conf_mat_test, file_path, "Confusion Matrix 4: GBM Test Set")
+
+
 
