@@ -39,7 +39,7 @@ split_epspxq_indicator <- function(data) {
 # Filter data
 filtered_data <- raw_data %>%
   split_epspxq_indicator() %>%
-  filter(!is.na(epspxq_sign), fyearq %in% c(2018:2019)) %>%
+  filter(!is.na(epspxq_sign)) %>%  #fyearq %in% c(2018:2019)) %>%
   mutate(atq_ltq = atq / ltq) %>% 
   select(-epspxq) # Exclude EPS to prevent leakage
   
@@ -57,11 +57,15 @@ predictor_vars <- c("xintq", #Interest and Related Expense- Total
 # Prepare the dataset
 data_model <- filtered_data %>%
   select(epspxq_sign, all_of(predictor_vars))
+
+table(data_model$epspxq_sign)
     # Remove rows with missing values
 
 #--------------Data Splitting -------------
 N <- nrow(data_model)
 N
+
+
 # Optional: Shuffle the data to ensure randomness
 set.seed(123)  # For reproducibility
 data_model <- data_model[sample(N), ]
@@ -112,12 +116,14 @@ valid_values <- filtered_data$epspxq_sign[valid.indices]
 
 calculate_mse(dumb_preds, valid_values)
 
+
+
 #-------------GBM Model----------------------------------------
 gbm_model <- gbm(
   formula = epspxq_sign ~ .,
   data = train_data,
   distribution = "bernoulli",
-  n.trees = 2000,
+  n.trees = 1000,
   interaction.depth = 3,
   shrinkage = 0.05,
   cv.folds = 5,
@@ -170,10 +176,7 @@ cat("AUC (Validation): ", auc_val, "\n") %>%
 cat("AUC (Test): ", auc_test, "\n")
 
 
-# Plot ROC curve for the validation and test sets
-plot(roc_obj_val, col = "blue", main = "ROC Curve Comparison", lwd = 2)
-plot(roc_obj_test, col = "red", add = TRUE, lwd = 2)  
-legend("bottomright", legend = c("Validation", "Test"), col = c("blue", "red"), lwd = 2)
+
 
 #---------------CatBoost------------
 
@@ -188,20 +191,24 @@ cat_model <- catboost.train(
     fold_permutation_block = 5,
     use_best_model = TRUE,
     loss_function = "Logloss",
-    iterations = 2000,
+    iterations = 1000,
     depth = 3,
     learning_rate = 0.05,
-    eval_metric = "Logloss",
-    train_dir = "catboost_info"
+    eval_metric = "AUC",
+    train_dir = "catboost_info",
+    od_type = "Iter",
+    od_wait = 10
   ),
   test_pool = val_pool  
 )
+
+
 
 # Best iteration
 best_nrounds <- cat_model$best_iteration
 
 
-cat_model
+cat_model$feature_importances
 
 
 
@@ -238,31 +245,83 @@ cat("Accuracy of CatBoost Model on Test Set: ", accuracy_test, "\n")
 
 
 
-#---------------Saving the Conf Matricies ---------------
-conf_matrix
-conf_matrix_test
-gbm_conf_mat_val
-gbm_conf_mat_test
+cat_roc_obj_val <- roc(val_y, cat_preds_val)
+cat_auc_val <- auc(cat_roc_obj_val)
+
+cat_roc_obj_test <- roc(test_y, cat_preds_test)
+cat_auc_test <- auc(cat_roc_obj_test)
 
 
-file_path <- "confusion_matrices.txt"
+# Plot ROC curve for the validation and test sets
+plot(roc_obj_val, col = "blue", lty = "dashed", main = "ROC Curve Comparison", lwd = 2)+
+plot(roc_obj_test, col = "blue", lty = "solid", add = TRUE, lwd = 2)
 
-append_confusion_matrix_to_file <- function(conf_matrix, file_path, title) {
+plot(cat_roc_obj_val, col = "red", lty = "dashed", add = TRUE, lwd = 2)
+plot(cat_roc_obj_test, col = "red", lty = "solid", add = TRUE, lwd  = 2)
 
-  conf_matrix_text <- capture.output(print(conf_matrix))
-  conf_matrix_text <- c(paste("\n###", title, "###\n"), conf_matrix_text)
-  file_conn <- file(file_path, open = "a")
-  writeLines(conf_matrix_text, file_conn)
-  close(file_conn)
+legend("bottomright", legend = c("GBM", "Catboost"), col = c("blue", "red"), lwd = 2)
+
+
+
+png("gbm_roc_curve_test.png", width = 600, height = 400)
+# Plot ROC curve for the validation and test sets
+cat_roc_plot <- plot(roc_obj_test, col = "blue", lty = "solid", main = "GBM ROC Curve (Test)", lwd = 2)
+dev.off()
+
+
+
+
+#------------------ Heatmaps ---------------
+
+plot_confusion_matrix <- function(cm) {
+  total <- sum(cm$table)
+  labels <- sprintf("%d\n%.1f%%", cm$table, 100 * cm$table / total)
+  
+  cm_df <- as.data.frame(cm$table)
+  colnames(cm_df) <- c("Prediction", "Reference", "Freq")
+  
+  heatmap <- ggplot(data = cm_df, aes(x = Reference, y = Prediction, fill = Freq)) +
+    geom_tile(color = "white") +
+    geom_text(aes(label = labels), vjust = 0.5, fontface = "bold") +
+    scale_fill_gradient(low = "white", high = "steelblue") +
+    labs(x = 'Actual', y = 'Predicted', fill = 'Count') +
+    ggtitle("Confusion Matrix (GBM Model)") +
+    theme_minimal() +
+    theme(axis.text = element_text(size = 12),
+          axis.title = element_text(size = 14, face = "bold"))
+  
+  return(heatmap)
 }
 
-# If the file exists and you want to start fresh, uncomment the following line
-# file.remove(file_path)
-
-append_confusion_matrix_to_file(conf_matrix, file_path, "Confusion Matrix 1: General")
-append_confusion_matrix_to_file(conf_matrix_test, file_path, "Confusion Matrix 2: Test Set")
-append_confusion_matrix_to_file(gbm_conf_mat_val, file_path, "Confusion Matrix 3: GBM Validation Set")
-append_confusion_matrix_to_file(gbm_conf_mat_test, file_path, "Confusion Matrix 4: GBM Test Set")
+cat_conf <- plot_confusion_matrix(conf_matrix_test)
+ggsave("cat_conf.png", plot = cat_conf)
 
 
+gbm_conf <- plot_confusion_matrix(gbm_conf_mat_test)
+ggsave("gmb_conf.png", plot = gbm_conf)
+
+#---------------- Feature Importance-----------
+library(ggplot2)
+
+# Get feature importances from the CatBoost model
+cat_feature_importances <- catboost.get_feature_importance(cat_model)
+
+# Assuming you have a vector of feature names (e.g., colnames(train_data))
+feature_names <- colnames(train_data)
+
+# Create a data frame with feature names and their importance scores
+importance_df <- data.frame(Feature = predictor_vars, Importance = cat_feature_importances)
+
+# Sort the features by importance in descending order
+importance_df <- importance_df[order(importance_df$Importance, decreasing = TRUE), ]
+
+# Plot using ggplot2
+feature_plot <- ggplot(importance_df, aes(x = reorder(Feature, Importance), y = Importance)) +
+  geom_bar(stat = "identity", fill = "gray") +
+  coord_flip() +  # Flip the axes for a horizontal bar chart
+  labs(title = "Feature Importance (CatBoost Model)", x = "Feature", y = "Importance") +
+  theme_minimal()+
+  theme(panel.grid = element_blank())
+
+ggsave("feature_plot.png", plot = feature_plot)
 
